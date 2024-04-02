@@ -3,6 +3,7 @@
     background-color: black;
     color: white;
     overflow-x: hidden;
+    
 }
 
 /* Remaining CSS styles */
@@ -65,7 +66,7 @@ nav {
 }
 
 .section {
-    height: 500px;
+    height: 100vh;
 }
 
 /* Hide the default scrollbar */
@@ -101,7 +102,11 @@ footer {
     }
 
 
-
-
-
-
+    #home {
+        display: flex;
+        background-image: url('240_F_231566167_DcxyiS11UCKdIoFpPdkXFpAzeVhh6qFA.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        justify-content: center;
+        align-items: center;
+    }
