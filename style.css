@@ -63,6 +63,7 @@ nav {
     padding-top: 90px; /* Adjust padding to account for fixed navigation bar */
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
