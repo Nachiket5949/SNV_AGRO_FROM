@@ -121,7 +121,7 @@ footer {
 #home {
     /* background-image: url('240_F_231566167_DcxyiS11UCKdIoFpPdkXFpAzeVhh6qFA.jpg'); */
     background-image: url(imageAgriculture.jpeg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     border-radius: 7px;
     /* margin: 7px; */
