@@ -152,3 +152,25 @@ footer {
     font-size: 90px;
 }
 
+
+
+
+#products {
+    display: flex; /* Display flex to arrange boxes in a row */
+    justify-content: space-around; /* Distribute space between boxes */
+    align-items: center; /* Align boxes vertically in the center */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next line if needed */
+}
+
+.box {
+    border: 2px solid red;
+    height: 40vh;
+    width: 17vw;
+    margin-top: 8vh;
+    /* padding-top: 20px; */
+    display: flex; /* Display flex to arrange content in a row */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 20px; /* Add margin to separate boxes */
+}
+
