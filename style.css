@@ -143,13 +143,18 @@ footer {
 
 
 #home p{
-    color: red;
-    font-size: 40px;
+    color: rgb(78, 2, 74);
+     font-size: 40px;
+    /* font-size: larger; */
+    margin: 0px;
+    padding: 0px;
 }
 
 #home h2{
     color: yellow;
     font-size: 90px;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -164,13 +169,68 @@ footer {
 
 .box {
     border: 2px solid red;
-    height: 40vh;
+    height: 43vh;
     width: 17vw;
     margin-top: 8vh;
-    /* padding-top: 20px; */
-    display: flex; /* Display flex to arrange content in a row */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin-bottom: 20px; /* Add margin to separate boxes */
+    display: flex;
+    overflow: hidden;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 20px; */
+    position: relative;
+    border-radius: 8px;
+    background-color: rgb(30, 29, 29);
 }
 
+.box img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensure the image covers the box proportionally */
+    border-radius: 5px; /* Optional: Add some rounding to the image corners */
+    margin-bottom: 70px;
+    
+}
+
+.product-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Ensure padding doesn't increase element size */
+    background-color: rgb(45, 45, 45);
+    border-radius: 8px;
+}
+
+.product-name, .product-price {
+    color: white;
+    margin: 0;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 0.9em; /* Adjust font size as needed */
+}
+
+.buy-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add margin to separate button from price */
+}
+
+.buy-button:hover {
+    background-color: #ff3333; /* Darker shade of red on hover */
+    text-decoration: underline;
+    color: yellow;
+    font-size: 14px;
+}
