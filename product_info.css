@@ -1,0 +1,105 @@
+Reset and Global Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* background-image: url('imageAgriculture.jpeg'); */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-color: #0d8fd5;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 1; /* Ensure navbar is above other content */
+    position: fixed; /* Fix the navbar position */
+    width: 100%; /* Occupy full width */
+}
+
+nav .left, nav .right {
+    color: white;
+}
+
+nav .right a {
+    width: 10px;
+    width: 120px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav .right a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 130px; /* Adjust to leave space for navbar */
+    padding: 20px; /* Add padding to container */
+}
+
+.side1, .side2 {
+    padding: 20px;
+}
+
+.side1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.side2 {
+    position: relative;
+    margin-top: 170px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 1000px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.side2 h2 {
+    margin-bottom: 10px;
+}
+
+.side2 p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.copy {
+    background-color: rgba(194, 184, 184, 0.5);; /* Background color of the footer */
+    color: #fff; /* Text color */
+    text-align: center; /* Align text to the center */
+    padding: 5px 0; /* Add some padding at the top and bottom */
+    position: fixed; /* Fix the footer to the bottom */
+    width: 100%; /* Make the footer span the entire width of the viewport */
+    bottom: 0; /* Position the footer at the bottom of the viewport */
+}
+
+.copy p {
+    margin: 0; /* Remove default margin */
+}
